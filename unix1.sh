@@ -1,3 +1,5 @@
+#Enter student name,reg no:,marks of n students and create files with register number as filename and the file should
+#also contain the grade of the studen(here grade is not found for each subject)
 echo "Enter the no: of students :"
 read n
 i=$n
