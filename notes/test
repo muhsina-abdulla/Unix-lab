@@ -1,7 +1,40 @@
-Special Variables
------------------
+    Special Variables
+========================
 $echo $$
 displays the process id of the current shell
 
 $1,$2,$3....$n for 1st ,snd,3rd.....nth argument.
+
+     Basics of Arrays
+===========================
+declaration:
+        indirect:
+                  array_name[index no:]=value
+        explicit:
+                  declare -a arraynamee
+initialization
+        array_name=(value1 value2 ....valuen)
+        array_name=([1]=value [2]=value [3]=value....)
+accessing:
+         ${array_name[index]}
+         ${array_name[*]}    #accessing all elements
+         ${array_name[@]}    #accessing all elements
+         
+         #to print 1st element
+                  echo ${arr[0]}
+                  echo ${arr}
+                  
+         #to print all the elemens from a particular index ,say 5
+                  echo ${arr[@]:5}
+                  
+         #to print elements in a range,say 1-4
+                  echo ${arr[@]:1:4}   
+         
+         # Length of Particular element 
+                  echo ${#arr[0]}         
+                  echo ${#arr}
+          #Size of an array
+                  echo ${#arr[@]}
+                  echo ${arr[*]}
+                  
 
