@@ -1,0 +1,7 @@
+Special Variables
+-----------------
+$echo $$
+displays the process id of the current shell
+
+$1,$2,$3....$n for 1st ,snd,3rd.....nth argument.
+
