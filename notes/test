@@ -37,4 +37,19 @@ accessing:
                   echo ${#arr[@]}
                   echo ${arr[*]}
                   
+                  
+         SHELL BASIC OPERATORS
+  ===================================
+  
+  1.ARITHMETIC OPERATORS
+  ======================
+        +           #Addition           c=`expr $a + $b`  9a=20,b=5)
+        -           #Subtraction        c=`expr $a - $b`
+        \*          #Multiplication     c=`expr $a \* $b`
+        /           #Division           c=`expr $a / $b`
+        %           #Modulus            c=`expr $a % $b`
+        =           #Assignment
+        ==          #Equality           c=[ $a == $b ] #returns false
+        !=          #Not equality       c=[ $a != $b]   #returns true   #(condition is written inside[])
+                  
 
